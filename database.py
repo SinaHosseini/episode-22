@@ -12,5 +12,17 @@ class Database:
         tasks = result.fetchall()
         return tasks
 
-    def add_new_task(self):
-        ...
+    def add_new_task(self, new_title, new_description):
+        try:
+            query = f"INSERT INTO task(title, description) VALUES('{new_title}', '{new_description}')"
+            self.cursor.execute(query)
+            self.con.commit()
+            return True
+        except:
+            return False
+
+    def remove_task(self):
+        query = f"DELETE FROM"
+
+    def done_task(self):
+        query = f"UPDATE ... SET is_done = 1 WHERE ..."

@@ -51,6 +51,16 @@
       </item>
      </layout>
     </item>
+    <item>
+     <widget class="QTextEdit" name="tb_new_task_dec">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">

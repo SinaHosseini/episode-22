@@ -17,7 +17,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QGridLayout, QHBoxLayout, QLineEdit,
     QMainWindow, QMenuBar, QPushButton, QSizePolicy,
-    QStatusBar, QVBoxLayout, QWidget)
+    QStatusBar, QTextEdit, QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -61,6 +61,13 @@ class Ui_MainWindow(object):
 
 
         self.verticalLayout.addLayout(self.horizontalLayout)
+
+        self.tb_new_task_dec = QTextEdit(self.centralwidget)
+        self.tb_new_task_dec.setObjectName(u"tb_new_task_dec")
+        sizePolicy1.setHeightForWidth(self.tb_new_task_dec.sizePolicy().hasHeightForWidth())
+        self.tb_new_task_dec.setSizePolicy(sizePolicy1)
+
+        self.verticalLayout.addWidget(self.tb_new_task_dec)
 
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
