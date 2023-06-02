@@ -12,4 +12,4 @@ To create .exe file follow:
 
     4 - Run main.exe in dist folder
 
-![GUI]()
+![GUI](https://github.com/SinaHosseini/episode-22/blob/ef373ed8c7e5f56a63c147ba7cbe57a0134985d2/Screenshot%202023-06-02%20212838.png?raw=true)
